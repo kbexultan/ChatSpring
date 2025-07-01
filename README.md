@@ -13,6 +13,7 @@ Spring Boot чат-приложение
 - **Flyway**
 - **Docker / Docker Compose**
 - **Lombok**
+- **Swagger** (работает без авторизации)
 
 
 ## Как запустить проект
