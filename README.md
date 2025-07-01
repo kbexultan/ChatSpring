@@ -13,3 +13,47 @@ Spring Boot чат-приложение
 - **Flyway**
 - **Docker / Docker Compose**
 - **Lombok**
+
+
+## Как запустить проект
+
+### Шаг 1: Клонируй проект
+через git clone
+
+### Шаг 2: Включаем Докер с бд
+docker-compose up -d
+
+### Шаг 3: Spring MVN проект собираем 
+./mvnw clean install
+
+### Шаг 4: Run project
+
+##  API Эндпоинты
+
+### Аутентификация
+
+POST /api/v1/auth/register — регистрация пользователя
+
+POST /api/v1/auth/authenticate — вход и получаем токен
+
+### Чат комнаты
+GET /api/chatrooms — получить все инф про чаты которые у нас есть, в него входит пользователи, айди и является ли это групповым чатом 
+
+POST /api/chatrooms — создать чат комнату
+
+DELETE /api/chatrooms/{id} — удалить чат
+
+###  Сообщения
+POST /api/messages — отправить сообщение
+
+GET /api/messages/chatroom/{chatRoomId} — все сообщения чата
+
+DELETE /api/messages/{id} — удалить сообщение
+
+### Users
+GET  /api/users/all — можно получить все инф про пользователей их айди и username
+
+GET  /api/users/username/{username} — можно получить инф про пользователя через его username
+
+GET  /api/users/id/{id} — можно получить инф про пользователя через его id
+
