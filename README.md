@@ -16,7 +16,7 @@ Spring Boot чат-приложение
 - **Swagger** (работает без авторизации)
 
 
-## Как запустить проект
+## Как запустить проект №1
 
 ### Шаг 1: Клонируй проект
 через git clone
@@ -25,11 +25,14 @@ Spring Boot чат-приложение
 docker-compose up -d
 
 ### Шаг 3: Spring MVN проект собираем 
-./mvnw clean install
+mvn clean install
 
 ### Шаг 4: Run project
 
+
 ##  API Эндпоинты
+## Swagger
+http://localhost:8080/swagger-ui.html
 
 ### Аутентификация
 
