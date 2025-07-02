@@ -8,9 +8,6 @@ Spring Boot чат-приложение
 - **Spring Boot 3**
 - **Spring Security (JWT)**
 - **PostgreSQL**
-- **JPA/Hibernate**
-- **MapStruct**
-- **Flyway**
 - **Docker / Docker Compose**
 - **Lombok**
 - **Swagger** (работает без авторизации)
